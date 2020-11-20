@@ -1,12 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Colors from '../../constant/colors';
+import BodyText from '../BodyText/BodyText';
 
 export default function Header({ headerText }) {
 	return (
 		<View style={styles.header}>
-			<Text style={styles.headerText}>{headerText}</Text>
+			<BodyText style={styles.headerText}>{headerText}</BodyText>
 		</View>
 	);
 }
@@ -23,6 +24,6 @@ const styles = StyleSheet.create({
 
 	headerText: {
 		color: '#fff',
-		fontSize: 18,
+		fontSize: 20,
 	},
 });
